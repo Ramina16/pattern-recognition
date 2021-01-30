@@ -14,7 +14,7 @@ def get_data(numbers):
     """
     numbers = numbers
     n_classes = len(numbers)
-    z = zipfile.ZipFile('mnist.pkl.zip', 'r')
+    z = zipfile.ZipFile('lab3/mnist.pkl.zip', 'r')
     k = z.extract('mnist.pkl')  # Извлечь файл из архива
     with open(k, 'rb') as f:
         train_set, _, test_set = pickle.load(f, encoding="bytes")

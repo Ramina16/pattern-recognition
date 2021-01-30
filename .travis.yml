@@ -12,4 +12,5 @@ script:
   - python lab1/functions/first_task.py -v
   - python lab1/functions/second_task.py -v
   - python -m doctest lab2/functions.py -v
+  - python -m doctest lab3/functions.py -v
   

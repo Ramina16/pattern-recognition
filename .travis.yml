@@ -1,0 +1,13 @@
+language: python 
+python: 
+  - "3.7.8" 
+install: 
+  - pip3 install numpy 
+  - pip3 install pandas
+  - pip3 install matplotlib
+  - pip3 install sklearn
+script:
+  - python lab1/functions/first_task.py -v
+  - python lab1/functions/second_task.py -v
+  - python -m doctest lab2/functions.py -v
+  
